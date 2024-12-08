@@ -10,7 +10,7 @@ mood_dict = {0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Neutral', 5: '
 model = load_model('image.keras')  # Ensure path is correct
 
 # Streamlit app layout
-st.title('CNN Model Deployment')
+st.title('MOOD PREDICTION ')
 st.write('Upload an image for prediction')
 
 # File uploader for image
