@@ -7,7 +7,7 @@ import numpy as np
 mood_dict = {0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Neutral', 5: 'Sad', 6: 'Surprise'}
 
 # Load the pre-trained model
-model = load_model('C:/Users/ankur/Downloads/image.keras')  # Ensure path is correct
+model = load_model('image.keras')  # Ensure path is correct
 
 # Streamlit app layout
 st.title('CNN Model Deployment')
