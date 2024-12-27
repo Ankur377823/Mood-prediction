@@ -9,7 +9,7 @@ st.set_page_config(page_title="Mood Prediction", page_icon="😃", layout="wide"
 # Load the pre-trained model (ensure the path is correct)
 MODEL_PATH = "image_new.keras"  # Ensure this model file is available on Streamlit Cloud
 try:
-    model = load_model(MODEL_PATH)
+    model = load_model("imagepred.keras")
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
