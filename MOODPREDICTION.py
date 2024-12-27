@@ -33,9 +33,9 @@ def preprocess_image(uploaded_image):
 
 def predict_mood(img_array):
     try:
-        prediction = model.predict(img_array)
-        predicted_class_index = np.argmax(prediction, axis=1)[0]
-        predicted_mood = mood_dict.get(predicted_class_index, 'Unknown')
+        predictions = model.predict(img_array)
+        predict_c = np.argmax(predictions, axis=1)[0]
+        predicted_mood = mood_dict.get(predict_c, 'Unknown')
         return predicted_mood
     except Exception as e:
         st.error(f"Error during prediction:{e}")
