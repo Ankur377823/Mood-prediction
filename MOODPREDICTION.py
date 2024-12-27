@@ -7,7 +7,7 @@ import numpy as np
 st.set_page_config(page_title="Mood Prediction", page_icon="😃", layout="wide")
 
 # Load the pre-trained model (ensure the path is correct)
-MODEL_PATH = r"C:\Users\ankur\Downloads\image.keras"  # Replace with your actual model file path
+MODEL_PATH = r"image.keras"  # Replace with your actual model file path
 try:
     model = load_model(MODEL_PATH)
 except Exception as e:
