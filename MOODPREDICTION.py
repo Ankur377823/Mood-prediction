@@ -5,9 +5,9 @@ import numpy as np
 import base64
 from io import BytesIO
 
-mood_dict = {0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Neutral', 5: 'Sad', 6: 'Surprise'}
+mood_dict = {0:'Angry',1:'Disgust,2:'Fear,3:'Happy',4:'Neutral',5:'Sad',6:'Surprise'}
 model = load_model('image.keras')  
-st.set_page_config(page_title="Mood Prediction", page_icon="😃", layout="wide")
+st.set_page_config(page_title="Mood Prediction",page_icon="😃",layout="wide")
 
 
 st.markdown(
