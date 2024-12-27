@@ -6,7 +6,7 @@ import base64
 from io import BytesIO
 
 mood_dict = {0:'Angry',1:'Disgust',2:'Fear',3:'Happy',4:'Neutral',5:'Sad',6:'Surprise'}
-model = load_model('image.keras')  
+model = load_model('image_new.keras')  
 st.set_page_config(page_title="Mood Prediction",page_icon="😃",layout="wide")
 
 
